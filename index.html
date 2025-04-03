@@ -1,353 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>PIA</title>
+    <title>Rock Paper Scissor Game</title>
 </head>
-
 <body>
-    <header>
-        <div class="pia-logo">
-            <div class="box"></div>
-            <i class="fa-solid fa-circle-info" id="info"></i>
-            <div class="parag">PIA flights will operate from Terminal 3 at King Khalid Airport Riyadh - Please Click
-                Here</div>
-            <div class="paragr">✈️ Paris (France) Flight Operation Update - Please Click Here</div>
-            <div class="paragra">Travel Advisories & Other Important Announcements - Please Click Here</div>
-            <div class="paragrap">10% New Year discount on Canada to Pakistan (One-way / Round-trip) - Please Click Here
-            </div>
-            <div class="paragraph">Mandatory Polio Vaccination for Travelers to the Kingdom of Saudi Arabia (KSA). -
-                Please Click Here</div>
-            <div class="para">PIA flights will operate from Terminal 3 at King Khalid Airport Riyadh - Please Click Here
-            </div>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="rock.png" alt="rock">
         </div>
-        <div class="nav">
-            <div class="img">
-                <img src="https://www.piac.com.pk/images/assets/pia-logo.svg" alt="no_image">
-            </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#"></a>Where we Fly</li>
-                        <li><a href="#"></a>Experience</li>
-                        <li><a href="#"></a>Loyalty Programs</li>
-                        <li><a href="#"></a>Deals</li>
-                        <li><a href="#"></a>Corporate Website</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="nav-button"><button>Award +Plus Login</button></div>
+        <div class="choice" id="paper">
+            <img src="paper.png" alt="paper">
         </div>
-    </header>
-
-    <!--content-->
-
-    <div class="banner">
-        <div class="hover1" tabindex="0">
-            <i class="fa-solid fa-plane"></i>
-            <h3>Flight</h3>
-            <div class="form1">
-                <div class="form-radio">
-                    <label for="1" class="form1-1">
-                        <input type="radio" name="radio" value="Oneway" id="1"><span>Oneway</span>
-                    </label>
-                    <label for="2" class="form1-2">
-                        <input type="radio" name="radio" value="Roundtrip" id="2"><span>Roundtrip</span>
-                    </label>
-                    <label for="3" class="form1-3">
-                        <input type="radio" name="radio" value="Multicity" id="3"><span>Multicity</span>
-                    </label>
-                </div>
-                <div class="form-text">
-                    <label for="4">
-                        <select name="from" id="4" class="opt1">
-                            <option value="Fr">From</option>
-                        </select>
-                    </label>
-                    <label for="5">
-                        <select name="to" id="5" class="opt2">
-                            <option value="To">To</option>
-                        </select>
-                    </label>
-                    <input type="date" name="date" placeholder="Departure Date" class="date1">
-                    <input type="date" name="date" placeholder="Departure Date" class="date2">
-                    <input type="text" name="text" placeholder="1 Adult" class="text1">
-                    <label for="6">
-                        <select name="All" id="6" class="all">
-                            <option value="all">ALL</option>
-                        </select>
-                    </label>
-
-                    <label for="7">
-                        <select name="PKR" id="7" class="pkr">
-                            <option value="pkr">PKR</option>
-                        </select>
-                    </label>
-                    <div class="searc"><i class="fa-solid fa-magnifying-glass" id="icon-sear"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="hover2" tabindex="0">
-            <i class="fa-solid fa-tv"></i>
-            <i class="fa-solid fa-plane"></i>
-            <h3>Web Check-In</h3>
-            <div class="form2"></div>
-        </div>
-        <div class="hover3" tabindex="0">
-            <i class="fa-solid fa-ticket"></i>
-            <i class="fa-solid fa-plane"></i>
-            <h3>My Booking</h3>
-            <div class="form3"></div>
-        </div>
-        <div class="hover4" tabindex="0">
-            <i class="fa-solid fa-clock"></i>
-            <h3>Flight Status</h3>
-            <div class="form4"></div>
-        </div>
-        <div class="hover5" tabindex="0">
-            <i class="fa-solid fa-calendar-days"></i>
-            <h3>Schedule</h3>
-            <div class="form5"></div>
+        <div class="choice" id="scissors">
+            <img src="scissors.png" alt="scissors">
         </div>
     </div>
 
-    <!-- sticky button -->
-    <div class="contact"><button>Contact us</button></div>
-
-    <!-- 3rd part -->
-    <div class="headings">
-        <div class="first-head" tabindex="0">
-            <h3>Charter Flight</h3>
-            <div class="head-image1"></div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
         </div>
-        <div class="sec-head" tabindex="0">
-            <h3>Online Discount</h3>
-            <div class="head-image2"></div>
-        </div>
-        <div class="third-head" tabindex="0">
-            <h3>Web & Mobile Check-In</h3>
-            <div class="head-image3"></div>
-        </div>
-        <div class="forth-head" tabindex="0">
-            <h3>Call n Fly</h3>
-            <div class="head-image4"></div>
-        </div>
-        <div class="fifth-head" tabindex="0">
-            <h3>Nusuk</h3>
-            <div class="head-image5"></div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
         </div>
     </div>
 
-    <!-- 4th part -->
-
-    <div class="services">
-        <div class="our-services">
-            <p>OUR SERVICES</p>
-            <div class="service1">
-                <h6>Pre-book Meal</h6>
-                <p>Indulge in anticipation with our Pre-booked Meals – a culinary journey designed to elevate your
-                    dining experience, ensuring a delightful feast awaits you at your destination."</p>
-            </div>
-            <div class="service2">
-                <h6>Seat Selection</h6>
-                <p>Tailor your travel experience with our Seat Selection feature, where comfort meets choice. Choose
-                    your preferred seat and embark on a journey personalized just for you.</p>
-            </div>
-            <div class="service3">
-                <h6>Pre-book Baggage</h6>
-                <p>Simplify your travel with ease and foresight by opting for our Pre-book Baggage service.
-                    Secure your peace of mind by reserving your luggage space in advance, ensuring a seamless
-                    journey from check-in to arrival.</p>
-            </div>
-            <div class="service4">
-                <h6>Special Assistance</h6>
-                <p>Elevate your journey with our Special Assistance services, including personalized
-                    wheelchair support. Ensuring a smooth and accessible travel experience, we prioritize
-                    your comfort and convenience every step of the way.</p>
-            </div>
-        </div>
-    </div>
-    <div class="offers">
-        <div class="offer-head">
-            <p>BEST OFFERS</p>
-            <div class="box1">
-                <button>Book Now</button>
-                <a href="#">More details</a>
-                <div class="inner-div1">
-                    <p>Islamabad</p>
-                    <p>Sakrdu</p>
-                    <p>PKR...</p>
-                </div>
-            </div>
-
-            <div class="box2">
-                <button>Book Now</button>
-                <a href="#">More details</a>
-                <div class="inner-div2">
-                    <p>Islamabad</p>
-                    <p>Istanbul</p>
-                    <p>PKR <strong>410,880.00</strong></p>
-                </div>
-            </div>
-
-            <div class="box3">
-                <button>Book Now</button>
-                <a href="#">More details</a>
-                <div class="inner-div3">
-                    <p>Islamabad</p>
-                    <p>Toronto</p>
-                    <p>PKR <strong>505,695.00</strong></p>
-                </div>
-            </div>
-
-            <div class="box4">
-                <button>Book Now</button>
-                <a href="#">More details</a>
-                <div class="inner-div4">
-                    <p>Islamabad</p>
-                    <p>Kuala Lumper</p>
-                    <p>PKR <strong>217,210.00</strong></p>
-                </div>
-            </div>
-
-            <div class="box5">
-                <button>Book Now</button>
-                <a href="#">More details</a>
-                <div class="inner-div5">
-                    <p>Islamabad</p>
-                    <p>Kuala Lumper</p>
-                    <p>PKR <strong>217,210.00</strong></p>
-                </div>
-            </div>
-        </div>
+    <div class="msg-container">
+        <p class="msg">Play Your Move</p>
     </div>
 
-    <div class="down-pic">
-        <img src="img/piasub.png" alt="no-image">
-        <h1>A+ Executive Corporate Program</h1>
-        <ul>
-            <li>Our business services offer flexibility and exclusive savings for your company.</li>
-            <li>We provide tailored solutions based on your travel spend to maximize your corporate travel budget.</li>
-            <li>You can collectively earn rewards from all employee travel and redeem them for dynamic flights.</li>
-            <li>Additionally, you can use your rewards for flight upgrades and other benefits like excess baggage and
-                pre-allocation of seats.</li>
-            <li>Our goal is to enhance your corporate travel experience and ensure the best value for your budget.</li>
-        </ul>
-        <button>Become a Member</button>
-    </div>
-
-    <div class="our-news">
-        <p>Our News</p>
-        <div class="news-img1">
-            <div class="player1"></div>
-        </div>
-        <p class="p2">EASA Restores Certification</p>
-        <p class="p3">The European Union Aviation Safety Agency (EASA) has lifted the ban on Pakistan International
-            Airlines (PIA), allowing it to resume operations in European airspace. The decision follows improvements in
-            safety and compliance measures, marking a significant step for PIA’s international revival and restoring its
-            global connectivity.</p>
-        <button class="b1">Learn More</button>
-
-        <div class="news-img2">
-            <div class="player1"></div>
-        </div>
-        <p class="p4">Connecting Dreams, Families and Destination</p>
-        <p class="p5">PIA resumes flights to Paris after four years, reconnecting families, dreams, and destinations.
-            Starting January 10, 2025, begin your journey with Pakistan’s national airline.</p>
-        <button class="b2">Learn More</button>
-
-        <div class="news-img3">
-            <div class="player1"></div>
-        </div>
-        <p class="p6">Corporate Executive Suite</p>
-        <p class="p7">Experience the perfect blend of business and leisure at PIA’s Airport Hotel Corporate Club
-            Executive Suite.</p>
-        <button class="b3">Learn More</button>
-    </div>
-
-    <div class="wave"></div>
-    <div class="footer-stamp">
-        <div class="logo-pia"></div>
-        <i class="fa-solid fa-location-dot"></i>
-        <p>PIA Building, Jinnah International Airport, Karachi, 75200, Pakistan</p>
-
-        <i class="fa-solid fa-phone-flip" id="call"></i>
-        <p class="num">(+92-21)-111-786-786</p>
-
-        <i class="fa-solid fa-envelope" id="mail"></i>
-        <p class="mail2">contact@piac.aero</p>
-
-        <div class="divider"></div>
-        <i class="fa-brands fa-facebook" id="facebook"></i>
-
-        <div class="x-bg">
-            <i class="fa-brands fa-x-twitter" id="x"></i>
-        </div>
-
-        <div class="insta-bg">
-            <i class="fa-brands fa-instagram" id="insta"></i>
-        </div>
-
-        <div class="in-bg">
-            <i class="fa-brands fa-linkedin-in" id="in"></i>
-        </div>
-
-        <div class="youtube-bg">
-            <i class="fa-brands fa-youtube" id="youtube"></i>
-        </div>
-
-        <div class="divider2"></div>
-
-        <div class="about-sec">
-            <p class="about-us">About Us</p>
-            <p class="foot1">Vision and Values</p>
-            <p class="foot2">Managements</p>
-            <p class="foot3">Careers</p>
-            <p class="foot4">Accessibility Plan</p>
-            <p class="foot5">Press Release</p>
-            <p class="foot6">Tenders</p>
-            <p class="foot7">Bid Reports</p>
-            <p class="foot8">Agent Registrations</p>
-        </div>
-
-        <!-- Facilities -->
-
-        <div class="about-sec1">
-            <p class="about-us1">Facilities</p>
-            <p class="foot9">Air Passenger Rights</p>
-            <p class="foot10">Conditions of Carriage</p>
-            <p class="foot11">Booking Conditions</p>
-            <p class="foot12">Traveler's Information</p>
-            <p class="foot13">Overseas Pakistanis</p>
-            <p class="foot14">Track Your Cargo</p>
-            <p class="foot15">Book Charter</p>
-            <p class="foot16">Digital Check-In</p>
-        </div>
-
-        <!-- Help & Contact -->
-
-        <div class="about-sec2">
-            <p class="about-us2">Help & Contact</p>
-            <p class="foot17">Help & Contact</p>
-            <p class="foot18">Special Assistance</p>
-            <p class="foot19">Special Assistance Form</p>
-            <p class="foot20">Frequently Asked Questions</p>
-            <p class="foot21">Site Map</p>
-            <p class="foot22">Privacy Policy</p>
-            <p class="foot23">Business with PIA</p>
-            <p class="foot24">Feedback</p>
-            <p class="foot25">SIFC</p>
-        </div>
-
-        <div class="final-divider"></div>
-    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
