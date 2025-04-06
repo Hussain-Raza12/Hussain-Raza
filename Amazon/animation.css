@@ -1,0 +1,21 @@
+div
+{
+    height: 200px;
+    width: 200px;
+    border: 30px solid yellow;
+    border-top: 30px solid pink;
+    border-radius: 50%;
+    animation: rotate-animation;
+    animation: rotate-animation 2s ease-in-out 0s infinite  normal;
+}
+
+@keyframes rotate-animation {
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
