@@ -15,7 +15,7 @@ Passionate frontend developer specializing in **HTML, CSS, and JavaScript**. I l
 ### 📫 Connect With Me
 - GitHub: [Hussain-Raza12](https://github.com/Hussain-Raza12)
 - Email: [hussainraza6512@gmail.com](mailto:hussainraza6512@gmail.com)
-- Phone: 0327-7546790
+- Phone: 0323-4591047
 
 ### ✨ Fun Fact
 I enjoy solving frontend challenges and contributing to open-source projects!
